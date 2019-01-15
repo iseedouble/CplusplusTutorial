@@ -39,6 +39,10 @@ int main() {
 	
 		{
 			shared_ptr<Person> person1;
+			share_ptr<int> number;
+			number.reset(new int); // takes ownership of pointer (if you dont do this you wont me able to affect your number)
+			*number = 10;
+			cout << *number << endl;
 			//weak_ptr<Person> person1;
 			
 			{
